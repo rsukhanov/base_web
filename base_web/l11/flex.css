@@ -1,1 +1,28 @@
- 
+.wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.wrapper div {
+  border: 1px solid red;
+}
+
+.wrapper > .css3-flexbox-1 {
+  display: flex;
+  border: 1px solid green;
+  background: blue;
+  width: 40%;
+  height: 100%;
+}
+
+.css3-flexbox-1 {
+  display: flex;
+  flex-direction: ;
+  flex-grow: 1;
+  align-self: center;
+  align-items: center;
+}
+div {
+  display: block;
+}
