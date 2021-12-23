@@ -1,0 +1,105 @@
+.game {
+  width: 600px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+#cloud {
+  width: 80px;
+  height: 31px;
+  position: absolute;
+  top: 30px;
+  background-image: url(imgDino/cloud.jpeg);
+  background-size: 100%;
+  animation: cloudsMov 2.3s infinite linear;
+  animation-play-state: paused;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url("imgDino/dino.jpeg");
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  background-image: url("imgDino/kaktus.jpeg");
+  background-size: 20px 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+  animation: cactusMov 1.3s infinite linear;
+  animation-play-state: paused;
+}
+
+#counter {
+  width: 400px;
+  height: 26px;
+  position: relative;
+  left: 190px;
+  bottom: 80px;
+  font-size: 22px;
+  text-align: right;
+  font-family: sans-serif;
+}
+
+button {
+  display: block;
+  width: 200px;
+  margin: 100px auto;
+}
+
+#gameOver {
+  display: none;
+  font-family: sans-serif;
+  position: absolute;
+  top: 60px;
+  left: 200px;
+}
+
+@keyframes cactusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 90px;
+  }
+  30% {
+    top: 45px;
+  }
+  50% {
+    top: 0px;
+  }
+  80% {
+    top: 45px;
+  }
+  100% {
+    top: 90px;
+  }
+}
+
+@keyframes cloudsMov {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: -100px;
+  }
+}

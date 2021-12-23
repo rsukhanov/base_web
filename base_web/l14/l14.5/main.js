@@ -4,10 +4,13 @@ const myName2 = prompt("You main?")
 
  
 switch (myName2) {
+    case "Visage":
+        alert(`My also)`)
+        break;
     case "Techies" :
         alert(`You are gay`)
         break;
-    case "Invoker" :
+    case "Invoker" :    let
         alert(`You choose wonderfull hero`)
         break;
     default:
